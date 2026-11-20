@@ -6,8 +6,8 @@
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Mesto — фотографии любимых мест и статистика карточек." />
     <title>Mesto Russia</title>
-    <script type="module" crossorigin src="./assets/index-D-nBxEVj.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Dk8-FHuF.css">
+    <script type="module" crossorigin src="./assets/index-Br6m9B6a.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-RhCemC_z.css">
   </head>
   <body>
     <div class="page">
@@ -90,13 +90,17 @@
         <button class="popup__close" type="button" data-close aria-label="Закрыть окно">×</button>
         <h2 class="popup__title" id="profile-popup-title">Редактировать профиль</h2>
         <form class="form" id="profile-form" novalidate>
-          <label class="form__field">Имя
-            <input class="form__input" name="name" type="text" minlength="2" maxlength="40" required autocomplete="name" />
-          </label>
-          <label class="form__field">О себе
-            <input class="form__input" name="about" type="text" minlength="2" maxlength="200" required />
-          </label>
-          <button class="form__submit" type="submit">Сохранить</button>
+          <div class="form__field">
+            <label for="profile-name-input">Имя</label>
+            <input class="form__input" id="profile-name-input" name="name" type="text" minlength="2" maxlength="40" pattern="[A-Za-zА-Яа-яЁё -]+" data-validation="profile-name" aria-describedby="profile-name-error" required autocomplete="name" />
+            <span class="form__error" id="profile-name-error" aria-live="polite"></span>
+          </div>
+          <div class="form__field">
+            <label for="profile-about-input">О себе</label>
+            <input class="form__input" id="profile-about-input" name="about" type="text" minlength="2" maxlength="200" aria-describedby="profile-about-error" required />
+            <span class="form__error" id="profile-about-error" aria-live="polite"></span>
+          </div>
+          <button class="form__submit" type="submit" disabled>Сохранить</button>
         </form>
       </div>
     </div>
@@ -106,10 +110,12 @@
         <button class="popup__close" type="button" data-close aria-label="Закрыть окно">×</button>
         <h2 class="popup__title" id="avatar-popup-title">Обновить аватар</h2>
         <form class="form" id="avatar-form" novalidate>
-          <label class="form__field">Ссылка на изображение
-            <input class="form__input" name="avatar" type="url" placeholder="https://..." required />
-          </label>
-          <button class="form__submit" type="submit">Сохранить</button>
+          <div class="form__field">
+            <label for="avatar-input">Ссылка на изображение</label>
+            <input class="form__input" id="avatar-input" name="avatar" type="url" placeholder="https://..." aria-describedby="avatar-error" required />
+            <span class="form__error" id="avatar-error" aria-live="polite"></span>
+          </div>
+          <button class="form__submit" type="submit" disabled>Сохранить</button>
         </form>
       </div>
     </div>
@@ -119,13 +125,17 @@
         <button class="popup__close" type="button" data-close aria-label="Закрыть окно">×</button>
         <h2 class="popup__title" id="card-popup-title">Новое место</h2>
         <form class="form" id="card-form" novalidate>
-          <label class="form__field">Название
-            <input class="form__input" name="name" type="text" minlength="2" maxlength="30" required />
-          </label>
-          <label class="form__field">Ссылка на изображение
-            <input class="form__input" name="link" type="url" placeholder="https://..." required />
-          </label>
-          <button class="form__submit" type="submit">Создать</button>
+          <div class="form__field">
+            <label for="card-name-input">Название</label>
+            <input class="form__input" id="card-name-input" name="name" type="text" minlength="2" maxlength="30" aria-describedby="card-name-error" required />
+            <span class="form__error" id="card-name-error" aria-live="polite"></span>
+          </div>
+          <div class="form__field">
+            <label for="card-link-input">Ссылка на изображение</label>
+            <input class="form__input" id="card-link-input" name="link" type="url" placeholder="https://..." aria-describedby="card-link-error" required />
+            <span class="form__error" id="card-link-error" aria-live="polite"></span>
+          </div>
+          <button class="form__submit" type="submit" disabled>Создать</button>
         </form>
       </div>
     </div>
