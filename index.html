@@ -6,12 +6,14 @@
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Mesto — фотографии любимых мест и статистика карточек." />
     <title>Mesto Russia</title>
+    <script type="module" crossorigin src="./assets/index-V8evJmJz.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Dk8-FHuF.css">
   </head>
   <body>
     <div class="page">
       <header class="header">
         <button class="logo-button" id="stats-trigger" type="button" aria-label="Открыть статистику карточек">
-          <img class="logo" src="./src/images/logo.svg" alt="Mesto" />
+          <img class="logo" src="./assets/logo-C5QSHwpG.svg" alt="Mesto" />
           <span class="logo-country">Russia</span>
         </button>
       </header>
@@ -23,7 +25,7 @@
 
         <section class="profile" aria-label="Профиль пользователя">
           <div class="profile__avatar-wrap">
-            <img class="profile__avatar" id="profile-avatar" src="./src/images/avatar-cousteau.jpg" alt="Аватар пользователя" />
+            <img class="profile__avatar" id="profile-avatar" src="./assets/avatar-cousteau-Dn3SFhrD.jpg" alt="Аватар пользователя" />
             <button class="profile__avatar-edit" id="avatar-edit-button" type="button" aria-label="Изменить аватар">
               <span aria-hidden="true">✎</span>
             </button>
@@ -32,7 +34,7 @@
             <div class="profile__title-row">
               <h1 class="profile__name" id="profile-name">Жак-Ив Кусто</h1>
               <button class="icon-button profile__edit" id="profile-edit-button" type="button" aria-label="Редактировать профиль">
-                <img src="./src/images/edit-button.svg" alt="" />
+                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='23'%20height='23'%20stroke='white'/%3e%3cpath%20d='M17%208.32827L9.60377%2015.7666L8.28302%2014.4194L15.6604%207L17%208.32827ZM7%2017L8.96226%2016.4118L7.58491%2015.0835L7%2017Z'%20fill='white'/%3e%3c/svg%3e" alt="" />
               </button>
             </div>
             <p class="profile__about" id="profile-about">Исследователь океана</p>
@@ -59,7 +61,7 @@
             <span aria-hidden="true">i</span>
           </button>
           <button class="card__delete-button" type="button" aria-label="Удалить карточку">
-            <img src="./src/images/trash.svg" alt="" />
+            <img src="data:image/svg+xml,%3csvg%20width='18'%20height='19'%20viewBox='0%200%2018%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.45787%2017.86C2.51882%2018.52%203.06735%2019%203.73778%2019H14.2615C14.9319%2019%2015.4804%2018.5%2015.5414%2017.86L16.7197%205.69995H1.27954L2.45787%2017.86Z'%20fill='white'/%3e%3cpath%20d='M16.7201%201.9H11.5801V1.26C11.5801%200.560001%2011.0113%200%2010.3002%200H7.72009C7.00903%200%206.44018%200.560001%206.44018%201.26V1.9H1.27991C0.568849%201.9%200%202.46%200%203.16C0%203.86001%200.568849%204.42001%201.27991%204.42001H16.7201C17.4312%204.42001%2018%203.86001%2018%203.16C18%202.46%2017.4312%201.9%2016.7201%201.9Z'%20fill='white'/%3e%3c/svg%3e" alt="" />
           </button>
         </div>
         <div class="card__caption">
@@ -167,6 +169,5 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <script type="module" src="./src/scripts/main.js"></script>
   </body>
 </html>
